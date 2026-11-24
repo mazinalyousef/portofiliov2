@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="heroTitle">Mazen Alyousef | C# Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo" data-i18n="logoName">Mazen Alyousef</a>
+
+                 <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+
+                <ul class="nav-links" id="navLinks">
+
+                       <!-- Close button inside mobile menu -->
+                        <li class="mobile-menu-header">
+                            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </li>
+                    <li><a href="#about" data-i18n="navAbout">About</a></li>
+                    <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
+                    <li><a href="#works" data-i18n="navWorks">Works</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="language-toggle" id="languageToggle">العربية</button>
+                </div>
+               
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas class="hero-particles" aria-hidden="true"></canvas>
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <h1 data-i18n="heroTitle">Full-Stack C# Developer</h1>
+                    <p data-i18n="heroSubtitle">Building robust web and desktop applications with 8+ years of experience</p>
+                    <a href="#works" class="btn" data-i18n="heroButton">View My Work</a>
+                </div>
+                <div class="hero-portrait" aria-hidden="true">
+                    <div class="portrait-frame">
+                        <img src="images/hero-portrait.jpg" alt="" class="portrait-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="aboutTitle">About Me</h2>
+            <div class="about-content">
+                <p data-i18n="aboutText">Experienced and results-driven Software Developer...</p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3  data-i18n="programmingTitle">Programming Languages & Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>C#</li>
+                        <li>ASP.NET Core</li>
+                        <li>.NET MAUI</li>
+                        <li>WPF</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="frontendTitle">Frontend Technologies</h3>
+                    <ul class="skill-list">
+                        <li>Angular</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="databasesTitle">Databases & Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>SQL Server</li>
+                        <li>Entity Framework</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="toolsTitle">Tools & Practices</h3>
+                    <ul class="skill-list">
+                        <li>Git/GitHub</li>
+                        <li>RESTful API</li>
+                        <li>SignalR</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="otherTitle">Other</h3>
+                    <ul class="skill-list">
+                        <li>Problem Solving</li>
+                        <li>Client Communication</li>
+                        <li>Requirements Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section class="section" id="works">
+        <div class="container">
+            <h2 class="section-title" data-i18n="worksTitle">My Work</h2>
+            <div class="works-filter">
+                <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All</button>
+                <button class="filter-btn" data-filter="web"  data-i18n="filterWeb">Web Applications</button>
+                <button class="filter-btn" data-filter="desktop" data-i18n="filterDesktop">Desktop Applications</button>
+                <button class="filter-btn" data-filter="mobile" data-i18n="filterMobile">Mobile Applications</button>
+            </div>
+            <div class="works-grid" id="worksGrid">
+                <!-- Works will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/mazinalyousef" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mazin-alyousef" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@mazinalyousef5814" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mazin.alyousef@gmail.com"
+                target="_blank"
+                rel="noopener"
+                class="social-link">
+                 <i class="fas fa-envelope"></i>
+             </a>
+            </div>
+            <p class="copyright">&copy; 2026 Mazen Alyousef. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts: -->
+    <script src="js/data.js"></script>
+    <script src="js/languages.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/hero-particles.js"></script>
+</body>
+</html>
